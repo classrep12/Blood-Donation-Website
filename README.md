@@ -41,10 +41,10 @@ Git & GitHub (version control)
 🧑‍💻 How to Run Locally
 Clone the repository:
 
-git clone https://github.com/yourusername/blood-donation-prototype.git
-cd blood-donation-prototype
+git clone https://github.com/classrep12/Blood-Donation-Website/.git
+cd Blood-Donation-Website
 
-Open blooddonationhomepage.html in your browser to explore the prototype.
+Open bloodDonationHomepage.html in your browser to explore the prototype.
 
 
 
