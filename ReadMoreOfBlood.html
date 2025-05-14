@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Science Behind Blood Groups</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+            background-color: #fff5f8;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            padding: 40px;
+        }
+        .section {
+            margin-bottom: 40px;
+        }
+        .section h2 {
+            color: #d50000;
+            text-align: center;
+            font-size: 2.5em;
+        }
+        .read-more {
+            color: #ff4081;
+            cursor: pointer;
+            font-weight: bold;
+            text-decoration: underline;
+        }
+        .full-content {
+            display: none;
+            margin-top: 20px;
+            line-height: 1.7;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <div class="section">
+            <h2>The Science Behind Blood Groups</h2>
+            <p>Blood groups are more than just labels – they are crucial for ensuring safe and successful blood transfusions. Blood type is determined by the presence or absence of specific molecules called antigens on the surface of red blood cells. These antigens play a vital role in how our immune system reacts to foreign substances.</p>
+            
+            <span class="read-more" onclick="toggleContent()">Read More</span>
+            
+            <div class="full-content">
+                <p><strong>The Main Blood Groups:</strong> There are four primary blood groups based on the presence or absence of two key antigens, **A** and **B**:</p>
+                <ul>
+                    <li><strong>Type A:</strong> Has A antigens on red blood cells and anti-B antibodies in the plasma.</li>
+                    <li><strong>Type B:</strong> Has B antigens and anti-A antibodies.</li>
+                    <li><strong>Type AB:</strong> Has both A and B antigens, but no anti-A or anti-B antibodies. This makes it the universal recipient blood type.</li>
+                    <li><strong>Type O:</strong> Lacks both A and B antigens, but has anti-A and anti-B antibodies. It is the universal donor blood type.</li>
+                </ul>
+
+                <p><strong>Rh Factor:</strong> In addition to the ABO blood group system, there's another antigen called the **Rh factor** (or RhD antigen). If this antigen is present, the blood type is Rh-positive (+); if absent, it is Rh-negative (-). For example, someone with type A blood and the Rh factor is called **A+**.</p>
+
+                <p><strong>Why Blood Groups Matter in Donation:</strong> Matching the donor’s and recipient’s blood groups is essential in blood transfusions. If incompatible blood is transfused, the recipient’s immune system will recognize the foreign antigens as harmful and mount an immune response, which can be life-threatening.</p>
+
+                <ul>
+                    <li><strong>Type O-</strong> is considered the universal donor for red blood cells, as it lacks both A, B, and Rh antigens.</li>
+                    <li><strong>Type AB+</strong> is the universal recipient, able to receive any blood type without risk of a reaction.</li>
+                </ul>
+
+                <p><strong>Importance of Blood Group Matching:</strong> Proper matching of blood types helps to:</p>
+                <ul>
+                    <li>Prevent immune reactions that can cause severe complications.</li>
+                    <li>Ensure the donor's blood is compatible and will be accepted by the recipient’s body.</li>
+                </ul>
+                <p>Blood group knowledge is vital not only for transfusions but also for organ transplants, pregnancy, and even paternity testing.</p>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function toggleContent() {
+            var content = document.querySelector('.full-content');
+            var readMoreBtn = document.querySelector('.read-more');
+            
+            if (content.style.display === "none" || content.style.display === "") {
+                content.style.display = "block";
+                readMoreBtn.innerHTML = "Read Less";
+            } else {
+                content.style.display = "none";
+                readMoreBtn.innerHTML = "Read More";
+            }
+        }
+    </script>
+
+</body>
+</html>
